@@ -1,0 +1,13 @@
+#myBar {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: black;
+}
+#myBar li {
+    display: inline;
+    margin: 0 40px;
+    font-weight: bold;
+}

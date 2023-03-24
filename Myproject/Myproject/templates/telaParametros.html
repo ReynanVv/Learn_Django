@@ -1,0 +1,24 @@
+{% extends 'telaPai.html' %}
+<!DOCTYPE html>
+    {% block content %}
+    <html>
+    <head>
+        <title>Tela que recebe parametros</title>
+    </head>
+    <body>
+        <h1>Nome: {{nome}}</h1>
+        <h2> Data: {{data}} </h2>
+        <h3> Num de Linguagens: {{linguagens|length}}</h3>
+        <ul>
+            {% for leng in linguagens %}
+                {% if leng == 'Python' %}
+                    <li style='color: green;'> {{leng}} </li>
+                {% else %}
+                    <li style='color: red;'> {{leng}} </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </body>
+</html>
+
+{% endblock %}

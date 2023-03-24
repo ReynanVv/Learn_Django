@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link type='text/css' href='{% static 'css/barraNavegacao.css' %}' rel='stylesheet'/>
+</head>
+<body>
+    {% include "barraNavegacao.html" %}
+    <img style= 'background-color: green'; src='{% static 'images/logo.png' %}'/>
+    <br/>
+    {% block content %}{% endblock %}
+    <p>Este é o final da página</p>
+    <script type='text/javascript' src='{% static 'js/telaPai.js' %}'></script>
+</body>
+</html>
